@@ -2,16 +2,15 @@
   "name": "pepsicoke",
   "version": "1.0.0",
   "description": "Car Rental service that handles authentification and car reservations with vue.js",
-  "main": "index.js",
-  "scripts": {
-    "client-install": "npm install --prefix client",
-    "start": "node index.js",
-    "server": "nodemon index.js",
-    "client": "npm run serve --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client"
-  },
   "author": "Team 7",
-  "license": "MIT",
+  "scripts": {
+    "client": "npm run serve --prefix client",
+    "client-install": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client",
+    "server": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "main": "index.js",
   "dependencies": {
     "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
@@ -23,6 +22,14 @@
     "mongodb": "^3.6.6",
     "mongoose": "^5.12.10",
     "passport": "^0.4.1",
-    "passport-jwt": "^4.0.0"
-  }
+    "passport-jwt": "^4.0.0",
+    "vuetify": "^2.4.0"
+  },
+  "devDependencies": {
+    "sass": "^1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "~2.4.0",
+    "vuetify-loader": "^1.7.0"
+  },
+  "license": "MIT"
 }
